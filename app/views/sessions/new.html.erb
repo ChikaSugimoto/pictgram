@@ -3,6 +3,10 @@
     <div class="row">
       <div class="col-md-offset-4 col-md-4 users-new-container">
         <h1 class="text-center text-white">Log in</h1>
+          <p class="text-center text-white">Testアカウントでログインできます。<br>
+            Email: test@test.co.jp<br>
+            Password: test12345
+          </p>
         <%= form_for :session, url: login_path do |f| %>
           <div class="form-group">
             <%= f.label :email, class: "text-white" %>
@@ -12,7 +16,6 @@
             <%= f.label :password, class: "text-white" %>
             <%= f.password_field :password, class: "form-control" %>
           </div>
-
           <%= f.submit "ログイン", class: "btn-block btn-white" %>
         <% end %>
       </div>
